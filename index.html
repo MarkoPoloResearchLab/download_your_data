@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title data-i18n="site_title">Download Your Data</title>
+
+    <!-- Bootswatch: Materia (Bootstrap 5) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5/dist/materia/bootstrap.min.css" rel="stylesheet"/>
+
+    <link rel="icon" href="images/favicon.png"/>
+    <style>
+        html { scroll-behavior: smooth; }
+        section { scroll-margin-top: 84px; }
+        .platform-card img {
+            background: #e9ecef; border: 1px dashed #b0b0b0;
+        }
+        .flag-btn { height: 20px; width: 28px; object-fit: cover; border-radius: 2px; border: 1px solid rgba(0,0,0,.15); }
+        .muted-small { font-size: 0.925rem; color: #6c757d; }
+        .external-link::after { content: "↗"; margin-left: .25rem; font-size: .85em; opacity: .8; }
+        .lang-btn { padding: 0; background: transparent; border: 0; line-height: 0; }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-semibold" href="#" data-i18n="site_title">Download Your Data</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="mainNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#facebook" data-i18n="nav_facebook">Facebook</a></li>
+                <li class="nav-item"><a class="nav-link" href="#instagram" data-i18n="nav_instagram">Instagram</a></li>
+                <li class="nav-item"><a class="nav-link" href="#linkedin" data-i18n="nav_linkedin">LinkedIn</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tiktok" data-i18n="nav_tiktok">TikTok</a></li>
+                <li class="nav-item"><a class="nav-link" href="#x" data-i18n="nav_x">X (Twitter)</a></li>
+                <li class="nav-item"><a class="nav-link" href="#youtube" data-i18n="nav_youtube">YouTube</a></li>
+                <li class="nav-item"><a class="nav-link" href="#google" data-i18n="nav_google">Google</a></li>
+            </ul>
+
+            <!-- Language Switcher -->
+            <div class="d-flex gap-2">
+                <button class="lang-btn" aria-label="English" data-lang="en"><img class="flag-btn" src="images/flag-en.png" alt="English"/></button>
+                <button class="lang-btn" aria-label="Español" data-lang="es"><img class="flag-btn" src="images/flag-es.png" alt="Español"/></button>
+                <button class="lang-btn" aria-label="Français" data-lang="fr"><img class="flag-btn" src="images/flag-fr.png" alt="Français"/></button>
+                <button class="lang-btn" aria-label="Русский" data-lang="ru"><img class="flag-btn" src="images/flag-ru.png" alt="Русский"/></button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="bg-light py-4 border-bottom">
+    <div class="container">
+        <h1 class="h3 mb-2" data-i18n="hero_heading">Get a copy of your data from social & search platforms</h1>
+        <p class="mb-0 muted-small" data-i18n="hero_sub">
+            Click a platform above to jump to its section. Replace placeholder images in <code>/images</code> with your own screenshots.
+        </p>
+    </div>
+</header>
+
+<main class="container my-4">
+
+    <!-- FACEBOOK -->
+    <section id="facebook" class="mb-5">
+        <div class="card platform-card">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-3" data-i18n="fb_title">Facebook</h2>
+                <p class="mb-3" data-i18n="fb_intro">Export posts, photos, messages, and more via Facebook’s Download Your Information tool.</p>
+
+                <ol class="mb-3">
+                    <li data-i18n="fb_s1">
+                        Go to <a class="external-link" href="https://www.facebook.com/settings" target="_blank" rel="noopener">Settings</a> → <strong>Your Facebook Information</strong> → <strong>Download your information</strong>.
+                    </li>
+                    <li data-i18n="fb_s2">Choose Date range (<em>All time</em>), Format (HTML or JSON), and Media quality (High recommended).</li>
+                    <li data-i18n="fb_s3">Select categories or keep all selected, then click <strong>Create file</strong>.</li>
+                    <li data-i18n="fb_s4">When notified, return to <strong>Available files</strong> and click <strong>Download</strong> (link expires in a few days).</li>
+                </ol>
+
+                <p class="muted-small mb-3">
+                    <span data-i18n="official_help">Official help:</span>
+                    <a class="external-link" href="https://www.facebook.com/help/1701730696756992" target="_blank" rel="noopener">How do I download a copy of my Facebook information?</a>
+                </p>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <img src="images/facebook-settings.png" class="img-fluid rounded" data-i18n-attr="alt:fb_img1_alt" alt="Facebook Settings > Your Facebook Information"/>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/facebook-download-your-info.png" class="img-fluid rounded" data-i18n-attr="alt:fb_img2_alt" alt="Facebook Download Your Information tool"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section id="instagram" class="mb-5">
+        <div class="card platform-card">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-3" data-i18n="ig_title">Instagram</h2>
+                <p class="mb-3" data-i18n="ig_intro">Request your photos, comments, profile info, and more. Instagram emails a download link.</p>
+
+                <ol class="mb-3">
+                    <li data-i18n="ig_s1">App: Profile → menu (≡) → <strong>Your activity</strong>.</li>
+                    <li data-i18n="ig_s2">Tap <strong>Download your information</strong> (or <strong>Download or transfer information</strong>).</li>
+                    <li data-i18n="ig_s3">Choose <strong>Complete copy</strong>, Delivery (<em>To your device</em>), Format (HTML or JSON), Quality, and Date range.</li>
+                    <li data-i18n="ig_s4">Tap <strong>Request download</strong>, confirm password. Link is time-limited.</li>
+                </ol>
+
+                <p class="muted-small mb-3">
+                    <span data-i18n="official_help">Official help:</span>
+                    <a class="external-link" href="https://help.instagram.com/181231772500920" target="_blank" rel="noopener">Get a copy of your information</a>
+                </p>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <img src="images/instagram-your-activity.png" class="img-fluid rounded" data-i18n-attr="alt:ig_img1_alt" alt="Instagram Your Activity screen"/>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/instagram-download-info.png" class="img-fluid rounded" data-i18n-attr="alt:ig_img2_alt" alt="Instagram Download Your Information request"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINKEDIN -->
+    <section id="linkedin" class="mb-5">
+        <div class="card platform-card">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-3" data-i18n="li_title">LinkedIn</h2>
+                <p class="mb-3" data-i18n="li_intro">Export a full archive or specific items (connections, messages, profile, etc.).</p>
+
+                <ol class="mb-3">
+                    <li data-i18n="li_s1">Desktop: <strong>Me</strong> → <strong>Settings &amp; Privacy</strong> → <strong>Data privacy</strong>.</li>
+                    <li data-i18n="li_s2">Select <strong>Get a copy of your data</strong>.</li>
+                    <li data-i18n="li_s3">Choose <strong>Larger data archive</strong> (full) or select specific files.</li>
+                    <li data-i18n="li_s4">Click <strong>Request archive</strong>, confirm password. Email arrives when ready (~24h).</li>
+                </ol>
+
+                <p class="muted-small mb-3">
+                    <span data-i18n="official_help">Official help:</span>
+                    <a class="external-link" href="https://www.linkedin.com/help/linkedin/answer/a1339363" target="_blank" rel="noopener">Download your account data</a>
+                </p>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <img src="images/linkedin-settings-privacy.png" class="img-fluid rounded" data-i18n-attr="alt:li_img1_alt" alt="LinkedIn Settings & Privacy"/>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/linkedin-get-copy.png" class="img-fluid rounded" data-i18n-attr="alt:li_img2_alt" alt="LinkedIn Get a copy of your data"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIKTOK -->
+    <section id="tiktok" class="mb-5">
+        <div class="card platform-card">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-3" data-i18n="tt_title">TikTok</h2>
+                <p class="mb-3" data-i18n="tt_intro">Request a ZIP of your account data from the mobile app.</p>
+
+                <ol class="mb-3">
+                    <li data-i18n="tt_s1">Profile → menu (☰/⋯) → <strong>Settings and privacy</strong> → <strong>Account</strong>.</li>
+                    <li data-i18n="tt_s2">Tap <strong>Download your data</strong>.</li>
+                    <li data-i18n="tt_s3">Choose Format (JSON recommended), then <strong>Request data</strong>.</li>
+                    <li data-i18n="tt_s4">Return to <strong>Download data</strong> to fetch the ZIP when ready (time-limited).</li>
+                </ol>
+
+                <p class="muted-small mb-3">
+                    <span data-i18n="official_help">Official help:</span>
+                    <a class="external-link" href="https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/requesting-your-data" target="_blank" rel="noopener">Requesting your data</a>
+                </p>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <img src="images/tiktok-settings.png" class="img-fluid rounded" data-i18n-attr="alt:tt_img1_alt" alt="TikTok Settings and privacy"/>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/tiktok-download-your-data.png" class="img-fluid rounded" data-i18n-attr="alt:tt_img2_alt" alt="TikTok Download your data"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- X / TWITTER -->
+    <section id="x" class="mb-5">
+        <div class="card platform-card">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-3" data-i18n="x_title">X (Twitter)</h2>
+                <p class="mb-3" data-i18n="x_intro">Get an archive including Tweets, media, DMs, and profile info.</p>
+
+                <ol class="mb-3">
+                    <li data-i18n="x_s1">Web: <strong>More</strong> → <strong>Settings and privacy</strong> → <strong>Your account</strong>.</li>
+                    <li data-i18n="x_s2">Click <strong>Download an archive of your data</strong>.</li>
+                    <li data-i18n="x_s3">Verify identity (password & verification code), then <strong>Request data</strong>.</li>
+                    <li data-i18n="x_s4">When notified, return and click <strong>Download archive</strong> to save the ZIP.</li>
+                </ol>
+
+                <p class="muted-small mb-3">
+                    <span data-i18n="official_help">Official help:</span>
+                    <a class="external-link" href="https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive" target="_blank" rel="noopener">How to download your archive</a>
+                </p>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <img src="images/x-settings.png" class="img-fluid rounded" data-i18n-attr="alt:x_img1_alt" alt="X Settings and privacy"/>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/x-download-archive.png" class="img-fluid rounded" data-i18n-attr="alt:x_img2_alt" alt="X Download archive"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOUTUBE -->
+    <section id="youtube" class="mb-5">
+        <div class="card platform-card">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-3" data-i18n="yt_title">YouTube</h2>
+                <p class="mb-3" data-i18n="yt_intro">Export your YouTube and YouTube Music data via Google Takeout.</p>
+
+                <ol class="mb-3">
+                    <li data-i18n="yt_s1">Open <a class="external-link" href="https://takeout.google.com" target="_blank" rel="noopener">Google Takeout</a> and sign in.</li>
+                    <li data-i18n="yt_s2">Click <strong>Deselect all</strong>, check <strong>YouTube and YouTube Music</strong>.</li>
+                    <li data-i18n="yt_s3">Click <strong>Next step</strong>, set delivery, frequency (<em>Export once</em>), file type (.zip), size.</li>
+                    <li data-i18n="yt_s4">Click <strong>Create export</strong>. Download from the email within ~7 days.</li>
+                </ol>
+
+                <p class="muted-small mb-3">
+                    <span data-i18n="official_help">Official help:</span>
+                    <a class="external-link" href="https://support.google.com/accounts/answer/3024190" target="_blank" rel="noopener">Download your data (Google Takeout)</a>
+                </p>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <img src="images/takeout-select-youtube.png" class="img-fluid rounded" data-i18n-attr="alt:yt_img1_alt" alt="Google Takeout YouTube selection"/>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/takeout-export-options.png" class="img-fluid rounded" data-i18n-attr="alt:yt_img2_alt" alt="Google Takeout export options"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOOGLE ACCOUNT -->
+    <section id="google" class="mb-4">
+        <div class="card platform-card">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-3" data-i18n="ga_title">Google (All Account Data)</h2>
+                <p class="mb-3" data-i18n="ga_intro">Export Gmail, Drive, Photos, Maps, YouTube, and more via Google Takeout.</p>
+
+                <ol class="mb-3">
+                    <li data-i18n="ga_s1">Open <a class="external-link" href="https://takeout.google.com" target="_blank" rel="noopener">Google Takeout</a> and sign in.</li>
+                    <li data-i18n="ga_s2">Leave all services checked or <strong>Deselect all</strong> and pick the ones you need.</li>
+                    <li data-i18n="ga_s3">Click <strong>Next step</strong>, set delivery, frequency, file type (.zip), and size.</li>
+                    <li data-i18n="ga_s4">Click <strong>Create export</strong>; download from the email within ~7 days. Store securely.</li>
+                </ol>
+
+                <p class="muted-small mb-3">
+                    <span data-i18n="official_help">Official help:</span>
+                    <a class="external-link" href="https://support.google.com/accounts/answer/3024190" target="_blank" rel="noopener">Download your data (Google Takeout)</a>
+                </p>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <img src="images/takeout-services.png" class="img-fluid rounded" data-i18n-attr="alt:ga_img1_alt" alt="Google Takeout services list"/>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/takeout-download.png" class="img-fluid rounded" data-i18n-attr="alt:ga_img2_alt" alt="Google Takeout download page"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="muted-small mt-3" data-i18n="sec_tip">
+            Security tip: Data exports can contain sensitive information. Store your ZIPs in a secure, encrypted location.
+        </p>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="py-4 border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+        <div class="mb-2 mb-md-0"><strong data-i18n="site_title">Download Your Data</strong> — <span data-i18n="footer_tagline">a quick guide to export your information from major platforms.</span></div>
+        <div class="muted-small">
+            <span data-i18n="built_with">Built with</span>
+            <a class="external-link" href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap 5</a> +
+            <a class="external-link" href="https://bootswatch.com/materia/" target="_blank" rel="noopener">Bootswatch Materia</a>.
+            <span data-i18n="hosted_on">Hosted on GitHub Pages.</span>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Tiny i18n -->
+<script>
+    // Translation dictionary
+    const T = {
+        en: {
+            site_title: "Download Your Data",
+            hero_heading: "Get a copy of your data from social & search platforms",
+            hero_sub: "Click a platform above to jump to its section. Replace placeholder images in /images with your own screenshots.",
+            nav_facebook: "Facebook", nav_instagram: "Instagram", nav_linkedin: "LinkedIn",
+            nav_tiktok: "TikTok", nav_x: "X (Twitter)", nav_youtube: "YouTube", nav_google: "Google",
+            official_help: "Official help:",
+            // Facebook
+            fb_title: "Facebook",
+            fb_intro: "Export posts, photos, messages, and more via Facebook’s Download Your Information tool.",
+            fb_s1: "Go to Settings → Your Facebook Information → Download your information.",
+            fb_s2: "Choose Date range (All time), Format (HTML or JSON), and Media quality (High recommended).",
+            fb_s3: "Select categories or keep all selected, then click Create file.",
+            fb_s4: "When notified, return to Available files and click Download (link expires in a few days).",
+            fb_img1_alt: "Facebook Settings > Your Facebook Information",
+            fb_img2_alt: "Facebook Download Your Information tool",
+            // Instagram
+            ig_title: "Instagram",
+            ig_intro: "Request your photos, comments, profile info, and more. Instagram emails a download link.",
+            ig_s1: "App: Profile → menu (≡) → Your activity.",
+            ig_s2: "Tap Download your information (or Download or transfer information).",
+            ig_s3: "Choose Complete copy, Delivery (To your device), Format (HTML or JSON), Quality, and Date range.",
+            ig_s4: "Tap Request download, confirm password. Link is time-limited.",
+            ig_img1_alt: "Instagram Your Activity screen",
+            ig_img2_alt: "Instagram Download Your Information request",
+            // LinkedIn
+            li_title: "LinkedIn",
+            li_intro: "Export a full archive or specific items (connections, messages, profile, etc.).",
+            li_s1: "Desktop: Me → Settings & Privacy → Data privacy.",
+            li_s2: "Select Get a copy of your data.",
+            li_s3: "Choose Larger data archive (full) or select specific files.",
+            li_s4: "Click Request archive, confirm password. Email arrives when ready (~24h).",
+            li_img1_alt: "LinkedIn Settings & Privacy",
+            li_img2_alt: "LinkedIn Get a copy of your data",
+            // TikTok
+            tt_title: "TikTok",
+            tt_intro: "Request a ZIP of your account data from the mobile app.",
+            tt_s1: "Profile → menu (☰/⋯) → Settings and privacy → Account.",
+            tt_s2: "Tap Download your data.",
+            tt_s3: "Choose Format (JSON recommended), then Request data.",
+            tt_s4: "Return to Download data to fetch the ZIP when ready (time-limited).",
+            tt_img1_alt: "TikTok Settings and privacy",
+            tt_img2_alt: "TikTok Download your data",
+            // X
+            x_title: "X (Twitter)",
+            x_intro: "Get an archive including Tweets, media, DMs, and profile info.",
+            x_s1: "Web: More → Settings and privacy → Your account.",
+            x_s2: "Click Download an archive of your data.",
+            x_s3: "Verify identity (password & verification code), then Request data.",
+            x_s4: "When notified, return and click Download archive to save the ZIP.",
+            x_img1_alt: "X Settings and privacy",
+            x_img2_alt: "X Download archive",
+            // YouTube
+            yt_title: "YouTube",
+            yt_intro: "Export your YouTube and YouTube Music data via Google Takeout.",
+            yt_s1: "Open Google Takeout and sign in.",
+            yt_s2: "Click Deselect all, check YouTube and YouTube Music.",
+            yt_s3: "Click Next step, set delivery, frequency (Export once), file type (.zip), size.",
+            yt_s4: "Click Create export. Download from the email within ~7 days.",
+            yt_img1_alt: "Google Takeout YouTube selection",
+            yt_img2_alt: "Google Takeout export options",
+            // Google (Account)
+            ga_title: "Google (All Account Data)",
+            ga_intro: "Export Gmail, Drive, Photos, Maps, YouTube, and more via Google Takeout.",
+            ga_s1: "Open Google Takeout and sign in.",
+            ga_s2: "Leave all services checked or Deselect all and pick the ones you need.",
+            ga_s3: "Click Next step, set delivery, frequency, file type (.zip), and size.",
+            ga_s4: "Click Create export; download from the email within ~7 days. Store securely.",
+            ga_img1_alt: "Google Takeout services list",
+            ga_img2_alt: "Google Takeout download page",
+            // Common footer
+            sec_tip: "Security tip: Data exports can contain sensitive information. Store your ZIPs in a secure, encrypted location.",
+            footer_tagline: "a quick guide to export your information from major platforms.",
+            built_with: "Built with",
+            hosted_on: "Hosted on GitHub Pages."
+        },
+        es: {
+            site_title: "Descarga tus datos",
+            hero_heading: "Obtén una copia de tus datos de redes sociales y plataformas de búsqueda",
+            hero_sub: "Haz clic en una plataforma para ir a su sección. Reemplaza las imágenes de /images con tus propias capturas.",
+            nav_facebook: "Facebook", nav_instagram: "Instagram", nav_linkedin: "LinkedIn",
+            nav_tiktok: "TikTok", nav_x: "X (Twitter)", nav_youtube: "YouTube", nav_google: "Google",
+            official_help: "Ayuda oficial:",
+            fb_title: "Facebook",
+            fb_intro: "Exporta publicaciones, fotos, mensajes y más con la herramienta Descargar tu información.",
+            fb_s1: "Ve a Configuración → Tu información de Facebook → Descargar tu información.",
+            fb_s2: "Elige Rango de fechas (Todo), Formato (HTML o JSON) y Calidad multimedia (Alta).",
+            fb_s3: "Selecciona categorías o deja todas marcadas y haz clic en Crear archivo.",
+            fb_s4: "Cuando te avisen, vuelve a Archivos disponibles y haz clic en Descargar (el enlace caduca).",
+            fb_img1_alt: "Configuración de Facebook > Tu información de Facebook",
+            fb_img2_alt: "Herramienta Descargar tu información de Facebook",
+            ig_title: "Instagram",
+            ig_intro: "Solicita tus fotos, comentarios, información de perfil y más. Instagram envía un enlace por correo.",
+            ig_s1: "App: Perfil → menú (≡) → Tu actividad.",
+            ig_s2: "Toca Descargar tu información (o Descargar o transferir información).",
+            ig_s3: "Elige Copia completa, Entrega (En tu dispositivo), Formato (HTML o JSON), Calidad y Rango de fechas.",
+            ig_s4: "Toca Solicitar descarga y confirma la contraseña. El enlace tiene tiempo limitado.",
+            ig_img1_alt: "Pantalla Tu actividad de Instagram",
+            ig_img2_alt: "Solicitud Descargar tu información de Instagram",
+            li_title: "LinkedIn",
+            li_intro: "Exporta un archivo completo o elementos específicos (contactos, mensajes, perfil, etc.).",
+            li_s1: "Escritorio: Yo → Configuración y privacidad → Privacidad de datos.",
+            li_s2: "Selecciona Obtener una copia de tus datos.",
+            li_s3: "Elige Archivo de datos grande (completo) o selecciona archivos específicos.",
+            li_s4: "Haz clic en Solicitar archivo y confirma la contraseña. Recibirás un correo (~24 h).",
+            li_img1_alt: "Configuración y privacidad de LinkedIn",
+            li_img2_alt: "Obtener una copia de tus datos en LinkedIn",
+            tt_title: "TikTok",
+            tt_intro: "Solicita un ZIP con los datos de tu cuenta desde la app móvil.",
+            tt_s1: "Perfil → menú (☰/⋯) → Configuración y privacidad → Cuenta.",
+            tt_s2: "Toca Descargar tus datos.",
+            tt_s3: "Elige Formato (JSON recomendado) y luego Solicitar datos.",
+            tt_s4: "Vuelve a Descargar datos para obtener el ZIP cuando esté listo (tiempo limitado).",
+            tt_img1_alt: "Configuración y privacidad de TikTok",
+            tt_img2_alt: "Pantalla Descargar tus datos de TikTok",
+            x_title: "X (Twitter)",
+            x_intro: "Obtén un archivo con Tweets, multimedia, MD y datos de perfil.",
+            x_s1: "Web: Más → Configuración y privacidad → Tu cuenta.",
+            x_s2: "Haz clic en Descargar un archivo con tus datos.",
+            x_s3: "Verifica identidad (contraseña y código) y luego Solicitar datos.",
+            x_s4: "Cuando te avisen, vuelve y haz clic en Descargar archivo para guardar el ZIP.",
+            x_img1_alt: "Configuración y privacidad en X",
+            x_img2_alt: "Página Descargar archivo en X",
+            yt_title: "YouTube",
+            yt_intro: "Exporta tus datos de YouTube y YouTube Music con Google Takeout.",
+            yt_s1: "Abre Google Takeout e inicia sesión.",
+            yt_s2: "Haz clic en Deseleccionar todo y marca YouTube y YouTube Music.",
+            yt_s3: "Haz clic en Siguiente paso, configura entrega, frecuencia (Exportar una vez), tipo (.zip) y tamaño.",
+            yt_s4: "Haz clic en Crear exportación. Descarga desde el correo en ~7 días.",
+            yt_img1_alt: "Selección de YouTube en Google Takeout",
+            yt_img2_alt: "Opciones de exportación en Google Takeout",
+            ga_title: "Google (Todos los datos de la cuenta)",
+            ga_intro: "Exporta Gmail, Drive, Fotos, Mapas, YouTube y más con Google Takeout.",
+            ga_s1: "Abre Google Takeout e inicia sesión.",
+            ga_s2: "Deja todos los servicios marcados o desmarca y elige los que necesites.",
+            ga_s3: "Haz clic en Siguiente paso y configura entrega, frecuencia, tipo (.zip) y tamaño.",
+            ga_s4: "Haz clic en Crear exportación; descarga desde el correo en ~7 días. Guárdalo de forma segura.",
+            ga_img1_alt: "Lista de servicios en Google Takeout",
+            ga_img2_alt: "Página de descarga en Google Takeout",
+            sec_tip: "Consejo de seguridad: Los archivos exportados pueden ser sensibles. Guárdalos cifrados y en un lugar seguro.",
+            footer_tagline: "una guía rápida para exportar tu información de las plataformas principales.",
+            built_with: "Creado con",
+            hosted_on: "Alojado en GitHub Pages."
+        },
+        fr: {
+            site_title: "Téléchargez vos données",
+            hero_heading: "Obtenez une copie de vos données des réseaux sociaux et plateformes de recherche",
+            hero_sub: "Cliquez sur une plateforme pour accéder à sa section. Remplacez les images de /images par vos captures.",
+            nav_facebook: "Facebook", nav_instagram: "Instagram", nav_linkedin: "LinkedIn",
+            nav_tiktok: "TikTok", nav_x: "X (Twitter)", nav_youtube: "YouTube", nav_google: "Google",
+            official_help: "Aide officielle :",
+            fb_title: "Facebook",
+            fb_intro: "Exportez publications, photos, messages et plus via l’outil Télécharger vos informations.",
+            fb_s1: "Aller à Paramètres → Vos informations Facebook → Télécharger vos informations.",
+            fb_s2: "Choisissez Période (Toute la période), Format (HTML ou JSON) et Qualité (Haute).",
+            fb_s3: "Sélectionnez les catégories ou laissez tout coché, puis cliquez Créer un fichier.",
+            fb_s4: "Une fois averti, retournez à Fichiers disponibles et cliquez Télécharger (lien à durée limitée).",
+            fb_img1_alt: "Paramètres Facebook > Vos informations Facebook",
+            fb_img2_alt: "Outil Télécharger vos informations Facebook",
+            ig_title: "Instagram",
+            ig_intro: "Demandez vos photos, commentaires, infos de profil, etc. Instagram envoie un lien par e-mail.",
+            ig_s1: "App : Profil → menu (≡) → Votre activité.",
+            ig_s2: "Touchez Télécharger vos informations (ou Télécharger ou transférer des informations).",
+            ig_s3: "Choisissez Copie complète, Livraison (Sur votre appareil), Format (HTML ou JSON), Qualité et Période.",
+            ig_s4: "Touchez Demander le téléchargement et confirmez le mot de passe. Lien limité dans le temps.",
+            ig_img1_alt: "Écran Votre activité Instagram",
+            ig_img2_alt: "Demande Télécharger vos informations Instagram",
+            li_title: "LinkedIn",
+            li_intro: "Exportez une archive complète ou des éléments spécifiques (relations, messages, profil, etc.).",
+            li_s1: "Bureau : Moi → Paramètres et confidentialité → Confidentialité des données.",
+            li_s2: "Sélectionnez Obtenir une copie de vos données.",
+            li_s3: "Choisissez Grande archive de données (complète) ou des fichiers spécifiques.",
+            li_s4: "Cliquez Demander l’archive, confirmez le mot de passe. E-mail sous ~24 h.",
+            li_img1_alt: "Paramètres et confidentialité LinkedIn",
+            li_img2_alt: "Obtenir une copie de vos données LinkedIn",
+            tt_title: "TikTok",
+            tt_intro: "Demandez un ZIP de vos données depuis l’app mobile.",
+            tt_s1: "Profil → menu (☰/⋯) → Paramètres et confidentialité → Compte.",
+            tt_s2: "Touchez Télécharger vos données.",
+            tt_s3: "Choisissez le format (JSON recommandé), puis Demander des données.",
+            tt_s4: "Revenez à Télécharger des données pour récupérer le ZIP (durée limitée).",
+            tt_img1_alt: "Paramètres et confidentialité TikTok",
+            tt_img2_alt: "Écran Télécharger vos données TikTok",
+            x_title: "X (Twitter)",
+            x_intro: "Obtenez une archive incluant Tweets, médias, messages privés et profil.",
+            x_s1: "Web : Plus → Paramètres et confidentialité → Votre compte.",
+            x_s2: "Cliquez Télécharger une archive de vos données.",
+            x_s3: "Vérifiez l’identité (mot de passe + code), puis Demander des données.",
+            x_s4: "Une fois averti, revenez et cliquez Télécharger l’archive pour enregistrer le ZIP.",
+            x_img1_alt: "Paramètres et confidentialité sur X",
+            x_img2_alt: "Page Télécharger l’archive sur X",
+            yt_title: "YouTube",
+            yt_intro: "Exportez vos données YouTube et YouTube Music via Google Takeout.",
+            yt_s1: "Ouvrez Google Takeout et connectez-vous.",
+            yt_s2: "Cliquez Désélectionner tout, cochez YouTube et YouTube Music.",
+            yt_s3: "Cliquez Étape suivante, définissez la livraison, la fréquence (Exporter une fois), le type (.zip) et la taille.",
+            yt_s4: "Cliquez Créer l’exportation. Téléchargez depuis l’e-mail sous ~7 jours.",
+            yt_img1_alt: "Sélection YouTube dans Google Takeout",
+            yt_img2_alt: "Options d’exportation Google Takeout",
+            ga_title: "Google (Toutes les données du compte)",
+            ga_intro: "Exportez Gmail, Drive, Photos, Maps, YouTube, etc. via Google Takeout.",
+            ga_s1: "Ouvrez Google Takeout et connectez-vous.",
+            ga_s2: "Laissez tous les services cochés ou désélectionnez et choisissez ceux souhaités.",
+            ga_s3: "Cliquez Étape suivante, définissez la livraison, la fréquence, le type (.zip) et la taille.",
+            ga_s4: "Cliquez Créer l’exportation ; téléchargez depuis l’e-mail sous ~7 jours. Stockez en sécurité.",
+            ga_img1_alt: "Liste des services dans Google Takeout",
+            ga_img2_alt: "Page de téléchargement Google Takeout",
+            sec_tip: "Conseil sécurité : les exports peuvent contenir des informations sensibles. Stockez-les chiffrées et en lieu sûr.",
+            footer_tagline: "un guide rapide pour exporter vos informations des principales plateformes.",
+            built_with: "Créé avec",
+            hosted_on: "Hébergé sur GitHub Pages."
+        },
+        ru: {
+            site_title: "Скачать ваши данные",
+            hero_heading: "Получите копию данных из соцсетей и поисковых сервисов",
+            hero_sub: "Нажмите на платформу, чтобы перейти к разделу. Замените изображения в /images своими скриншотами.",
+            nav_facebook: "Facebook", nav_instagram: "Instagram", nav_linkedin: "LinkedIn",
+            nav_tiktok: "TikTok", nav_x: "X (Twitter)", nav_youtube: "YouTube", nav_google: "Google",
+            official_help: "Официальная справка:",
+            fb_title: "Facebook",
+            fb_intro: "Экспорт публикаций, фото, сообщений и др. через инструмент «Скачать ваши сведения».",
+            fb_s1: "Откройте Настройки → Ваша информация в Facebook → Скачать вашу информацию.",
+            fb_s2: "Выберите Период (За всё время), Формат (HTML или JSON) и Качество медиа (Высокое).",
+            fb_s3: "Отметьте категории или оставьте все, затем нажмите Создать файл.",
+            fb_s4: "После уведомления вернитесь в Доступные файлы и нажмите Скачать (ссылка ограничена по времени).",
+            fb_img1_alt: "Настройки Facebook > Ваша информация в Facebook",
+            fb_img2_alt: "Инструмент «Скачать вашу информацию» Facebook",
+            ig_title: "Instagram",
+            ig_intro: "Запросите фото, комментарии, данные профиля и др. Ссылка придёт на e-mail.",
+            ig_s1: "Приложение: Профиль → меню (≡) → Ваша активность.",
+            ig_s2: "Нажмите «Скачать ваши сведения» (или «Скачать или перенести сведения»).",
+            ig_s3: "Выберите Полная копия, Доставка (На устройство), Формат (HTML или JSON), Качество и Период.",
+            ig_s4: "Нажмите «Запросить скачивание», подтвердите пароль. Ссылка ограничена по времени.",
+            ig_img1_alt: "Экран «Ваша активность» в Instagram",
+            ig_img2_alt: "Запрос «Скачать ваши сведения» в Instagram",
+            li_title: "LinkedIn",
+            li_intro: "Экспорт полного архива или отдельных данных (контакты, сообщения, профиль и т. п.).",
+            li_s1: "Десктоп: Я → Настройки и конфиденциальность → Конфиденциальность данных.",
+            li_s2: "Выберите «Получить копию ваших данных».",
+            li_s3: "Выберите «Расширенный архив» (полный) или отдельные файлы.",
+            li_s4: "Нажмите «Запросить архив», подтвердите пароль. Письмо придёт ≈ за 24 часа.",
+            li_img1_alt: "Настройки и конфиденциальность LinkedIn",
+            li_img2_alt: "«Получить копию ваших данных» в LinkedIn",
+            tt_title: "TikTok",
+            tt_intro: "Запрос ZIP-архива данных из мобильного приложения.",
+            tt_s1: "Профиль → меню (☰/⋯) → Настройки и конфиденциальность → Аккаунт.",
+            tt_s2: "Нажмите «Скачать ваши данные».",
+            tt_s3: "Выберите формат (рекомендуется JSON), затем «Запросить данные».",
+            tt_s4: "Вернитесь в «Загрузка данных», чтобы скачать ZIP (срок ограничен).",
+            tt_img1_alt: "Настройки и конфиденциальность TikTok",
+            tt_img2_alt: "Экран «Скачать ваши данные» TikTok",
+            x_title: "X (Twitter)",
+            x_intro: "Получите архив с твитами, медиа, личными сообщениями и данными профиля.",
+            x_s1: "Веб: Ещё → Настройки и конфиденциальность → Ваша учётная запись.",
+            x_s2: "Нажмите «Скачать архив ваших данных».",
+            x_s3: "Подтвердите личность (пароль и код), затем «Запросить данные».",
+            x_s4: "После уведомления вернитесь и нажмите «Скачать архив», чтобы сохранить ZIP.",
+            x_img1_alt: "Настройки и конфиденциальность в X",
+            x_img2_alt: "Страница «Скачать архив» в X",
+            yt_title: "YouTube",
+            yt_intro: "Экспорт данных YouTube и YouTube Music через Google Takeout.",
+            yt_s1: "Откройте Google Takeout и войдите.",
+            yt_s2: "Нажмите «Снять выделение со всех» и отметьте «YouTube и YouTube Music».",
+            yt_s3: "Нажмите «Следующий шаг», задайте доставку, частоту (Один раз), тип (.zip) и размер.",
+            yt_s4: "Нажмите «Создать экспорт». Скачайте из письма в течение ~7 дней.",
+            yt_img1_alt: "Выбор YouTube в Google Takeout",
+            yt_img2_alt: "Параметры экспорта Google Takeout",
+            ga_title: "Google (Все данные аккаунта)",
+            ga_intro: "Экспорт Gmail, Drive, Photos, Maps, YouTube и др. через Google Takeout.",
+            ga_s1: "Откройте Google Takeout и войдите.",
+            ga_s2: "Оставьте все сервисы отмеченными или снимите и выберите нужные.",
+            ga_s3: "Нажмите «Следующий шаг», задайте доставку, частоту, тип (.zip) и размер.",
+            ga_s4: "Нажмите «Создать экспорт»; скачайте из письма в течение ~7 дней. Храните безопасно.",
+            ga_img1_alt: "Список сервисов Google Takeout",
+            ga_img2_alt: "Страница загрузки Google Takeout",
+            sec_tip: "Совет по безопасности: Экспорты могут содержать чувствительные данные. Храните их зашифрованными в безопасном месте.",
+            footer_tagline: "краткое руководство по экспорту данных с основных платформ.",
+            built_with: "Создано на",
+            hosted_on: "Размещено на GitHub Pages."
+        }
+    };
+
+    // Apply translations
+    function applyLang(lang) {
+        const dict = T[lang] || T.en;
+        document.documentElement.lang = lang;
+        // Text nodes
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+            const key = el.getAttribute("data-i18n");
+            if (key && dict[key] != null) el.textContent = dict[key];
+        });
+        // Attribute translations: data-i18n-attr="attr:key,attr2:key2"
+        document.querySelectorAll("[data-i18n-attr]").forEach(el => {
+            const spec = el.getAttribute("data-i18n-attr");
+            if (!spec) return;
+            spec.split(",").forEach(pair => {
+                const [attr, key] = pair.split(":").map(s => s.trim());
+                if (attr && key && dict[key] != null) el.setAttribute(attr, dict[key]);
+            });
+        });
+        // Title element might need updating if bound
+        const titleEl = document.querySelector("title[data-i18n='site_title']");
+        if (titleEl) titleEl.textContent = dict.site_title || "Download Your Data";
+        localStorage.setItem("download-your-data.lang", lang);
+    }
+
+    // Language buttons
+    document.addEventListener("click", (ev) => {
+        const btn = ev.target.closest("[data-lang]");
+        if (!btn) return;
+        applyLang(btn.getAttribute("data-lang"));
+    });
+
+    // Init language: localStorage → navigator → en
+    (function initLang(){
+        const saved = localStorage.getItem("download-your-data.lang");
+        if (saved && T[saved]) return applyLang(saved);
+        const nav = (navigator.language || "en").slice(0,2);
+        const guess = ["en","es","fr","ru"].includes(nav) ? nav : "en";
+        applyLang(guess);
+    })();
+</script>
+</body>
+</html>
